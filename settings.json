@@ -1,0 +1,58 @@
+{
+    "screen_size": {
+        "1440/900": {},
+        "1360/768": {"x": 490, "y": 220,
+            "choose_country_x" : 850, "choose_country_y": 100,
+            "icon_profile_x": 1250, "icon_profile_y": 1200,
+            "button_to_login_x": 850, "button_to_login_y":  625,
+            "button_to_number_x": 950, "button_to_number_y":  975,
+            "button_to_new_login_x": 950, "button_to_new_login_y": 600,
+            "screenshot_captchi_x": 705, "screenshot_captchi_y": 400,
+            "screenshot_captchi_width": 500, "screenshot_captchi_height": 200,
+            "confirm_captchi_x": 1052, "confirm_captchi_y": 715,
+            "get_the_smscode_x": 950, "get_the_smscode_y": 1010,
+            "select_another_way_to_login_x": 950, "select_another_way_to_login_y": 300,
+            "check_the_way_x":750, "check_the_way_y": 100,
+            "check_the_way_width": 400, "check_the_way_height": 55,
+            "check_captchi_x": 700, "check_captchi_y": 350,
+            "check_captchi_width": 400, "check_captchi_height": 100},
+
+
+        "1920/1080": {
+
+            "x": 800, "y":375,
+
+            "choose_country_x" : 850, "choose_country_y": 100,
+
+            "icon_profile_x": 1225, "icon_profile_y": 1050,
+
+            "button_to_login_x": 850, "button_to_login_y":  625,
+
+            "button_to_number_x": 950, "button_to_number_y":  975,
+
+            "button_to_new_login_x": 950, "button_to_new_login_y": 600,
+
+            "screenshot_captchi_x": 705, "screenshot_captchi_y": 380,
+            "screenshot_captchi_width": 600, "screenshot_captchi_height": 180,
+            "confirm_captchi_x": 1052, "confirm_captchi_y": 675,
+
+            "get_the_smscode_x": 950, "get_the_smscode_y": 950,
+            "select_another_way_to_login_x": 950, "select_another_way_to_login_y": 300,
+
+            "check_the_way_x":750, "check_the_way_y": 100,
+            "check_the_way_width": 400, "check_the_way_height": 45,
+
+
+            "check_captchi_x": 700, "check_captchi_y": 580,
+            "check_captchi_width": 600, "check_captchi_height": 70,
+
+            "icon_main_menu_x": 700, "icon_main_menu_y": 1050,
+
+            "click_on_your_profile_x": 800, "click_on_your_profile_y": 80,
+            "click_on_exit_x": 1052 , "click_on_exit_y": 715
+        }
+    },
+    "CSS_default" : {
+        "authorization": ""
+    }
+}
