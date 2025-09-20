@@ -11,7 +11,7 @@ class User(SqlAlchemyBase):
     login = sqlalchemy.Column(sqlalchemy.String)
     password = sqlalchemy.Column(sqlalchemy.String)
     email = sqlalchemy.Column(sqlalchemy.String)
-
+    tg_name = sqlalchemy.Column(sqlalchemy.String)
 
 
 
