@@ -38,9 +38,7 @@ def main():
 def authorization():
     return render_template("login.html")
 
-@app.route('/registration', methods=['GET'])
-def regisration():
-    return render_template("registration.html")
+
 
 
 @app.route('/dasd', methods=['GET'])
