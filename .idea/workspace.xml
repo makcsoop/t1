@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1251314c-bb3d-49fc-956a-6562d044acb3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/about/dispecher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/about/expedite freight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/about/freight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/about/full and lessthan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/avatar.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/avatar2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/avatar2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/clients-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/clients/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/clients/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/clients/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/clients/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/devices-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/instagram/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/instagram/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/instagram/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/instagram/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/instagram/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/instagram/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/instagram/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/instagram/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/instagram/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logo3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logos/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logos/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logos/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logos/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logos/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logos/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/main-middle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/main-small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/main.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/main2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/main3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/map-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/mens_and_truks.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/services/Adaptability.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/services/Monitoring.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/services/Versatility.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/services/benefit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/services/benefit2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/services/creativity.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/services/css-html.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/services/digital.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/services/photography.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/services/reliability.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/services/safety.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/services/seo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/services/webdesign.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/support.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/team/angelina (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/team/angelina.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/team/daniyar (1) (3).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/team/daniyar.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/team/humoyun (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/team/humoyun.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/team/otabek (1) (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/team/otabek.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/usa-map (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/usa-map.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/vertex-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/wedo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/works/v1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/works/v2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/works/v3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/works/v4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/works/v5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/works/v6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/works/v7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/dashbord.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/imagines/10225073.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/imagines/11781193.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/imagines/2145933.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/imagines/5138124.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/imagines/5394955.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/imagines/6472295.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/imagines/9160827.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/imagines/Adobe-Express-file.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/imagines/Frame 1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/imagines/III-no-bg-preview-_carve.photos_.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/imagines/ping.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/imagines/Ваши_сервисы_под_контролем_Всегда_с_PingTower.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/imagines/Снимок экрана_20250919_210752.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/lk.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/style/DelaGothicOne-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/style/Montserrat-VariableFont_wght.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/suki_tolko_tronte/style/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="32wSnvfzstHP9hgRNwDXVHqxkZL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/macbook/Desktop/t1"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tempates" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1251314c-bb3d-49fc-956a-6562d044acb3" name="Changes" comment="" />
+      <created>1758330311995</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1758330311995</updated>
+    </task>
+    <servers />
+  </component>
+</project>
