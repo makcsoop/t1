@@ -10,8 +10,7 @@ class User(SqlAlchemyBase):
                            primary_key=True, autoincrement=True)
     login = sqlalchemy.Column(sqlalchemy.String)
     password = sqlalchemy.Column(sqlalchemy.String)
-    name = sqlalchemy.Column(sqlalchemy.String)
-    role = sqlalchemy.Column(sqlalchemy.Integer)
+    email = sqlalchemy.Column(sqlalchemy.String)
 
 
 
