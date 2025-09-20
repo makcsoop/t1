@@ -126,12 +126,10 @@ def execute_query(query, params=None, fetch=False, fetchall=False):
 # Главное меню
 def get_main_menu_keyboard():
     keyboard = [
-        [KeyboardButton("Проверить сайт")],
-        [KeyboardButton("Управление избранным")],
-        [KeyboardButton("Подробная информация")],
-        [KeyboardButton("Настройка уведомлений")],
-        [KeyboardButton("Если 1 сайт")],
-        [KeyboardButton("Если много сайтов")]
+        [KeyboardButton("Проверить сайт"), KeyboardButton("Упр. избранным")],
+
+        # Вторая строка: 2 кнопки
+        [KeyboardButton("Подробный отчет"), KeyboardButton("Уведомления")],
     ]
     return ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
 
@@ -281,11 +279,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         f"👋 Привет, {user.first_name}!\n\n"
         "Я — PingTower, твой личный ассистент по мониторингу сайтов.\n\n"
-        "Я отслеживаю:"
-"🟢 Uptime и доступность"
-"⚡️ Скорость загрузки (LCP, FCP, SI)"
-"🖱 Отзывчивость (INP, TBT)"
-"🧱 Визуальную стабильность (CLS)"
+        "Я отслеживаю:\n"
+"🟢 Uptime и доступность\n"
+"⚡️ Скорость загрузки (LCP, FCP, SI)\n"
+"🖱 Отзывчивость (INP, TBT)\n"
+"🧱 Визуальную стабильность (CLS)\n"
 "🔐 SSL и DNS",
         reply_markup=get_main_menu_keyboard()
     )
@@ -298,13 +296,14 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if query.data == "main_menu":
         await query.edit_message_text(
-            "Главное меню:",
+          #  "Главное меню:",
             reply_markup=None
         )
         await query.message.reply_text(
             "Выберите опцию:",
             reply_markup=get_main_menu_keyboard()
         )
+    
 
     elif query.data == "enter_url":
         await query.edit_message_text(
@@ -552,8 +551,8 @@ def main():
 
         application.add_handler(CommandHandler("start", start))
         application.add_handler(conv_handler)
-        application.add_handler(CallbackQueryHandler(button_handler))
         application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
+        application.add_handler(CallbackQueryHandler(button_handler))
 
         print("Бот запускается с расширенным меню...")
         application.run_polling()
