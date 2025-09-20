@@ -10,24 +10,21 @@ from data.db_session import global_init, SqlAlchemyBase
 import datetime
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, BooleanField, SubmitField, EmailField, TextAreaField, FileField
-from wtforms.validators import DataRequired
+from wtforms.validators import DataRequired, Email
 
 
 class LoginForm(FlaskForm):
     login = StringField('Логин', validators=[DataRequired()])
     password = PasswordField('Пароль', validators=[DataRequired()])
-    remember_me = BooleanField('Запомнить меня')
+    remember = BooleanField('Запомнить меня')
     submit = SubmitField('Войти')
 
 class RegisterForm(FlaskForm):
-    name = StringField('Имя', validators=[DataRequired()])
-    surname = StringField('Фамилия', validators=[DataRequired()])
-    patronymic = StringField('Отечество')
+    tg_name = StringField('TG', validators=[DataRequired()])
     login = StringField('Логин', validators=[DataRequired()])
-    email = EmailField('Email', validators=[DataRequired()])
+    email = StringField('Email', validators=[DataRequired()])
     password = PasswordField('Пароль', validators=[DataRequired()])
     password_repeat = PasswordField('Повторите пароль', validators=[DataRequired()])
-    rules = BooleanField('Соглашение пользователя')
     submit = SubmitField('Зарегистрироваться')
 
 
@@ -55,11 +52,6 @@ db_sess = db_session.create_session()
 def main():
     return render_template("main.html")
 
-# @app.route('/authorization', methods=['GET'])
-# def authorization():
-#     return render_template("login.html")
-
-
 @app.route('/authorization', methods=["GET", "POST"])
 def login_form():
     session['login'] = ''
@@ -74,7 +66,7 @@ def login_form():
         elif login_cur.password != form.password.data:
             return render_template('login.html', title='Авторизация',
                                    form=form,
-                                   message="Неверный пароль")
+                                   message="Неверный пароль!!!")
         login = form.login.data
         session['login'] = login
 
@@ -89,26 +81,32 @@ def register_form():
         db_sess = db_session.create_session()
         login_cur = db_sess.query(User).filter(User.login == form.login.data).first()
         if login_cur:
-            return render_template('register_new.html', title='Авторизация',
+            return render_template('registration.html', title='Авторизация',
                                    form=form,
                                    message="Такой пользователь уже существует")
+        if(len(form.password.data) < 8):
+            return render_template('registration.html', title='Авторизация',
+                                   form=form,
+                                   message="Пароль должен содержать не менее 8 символов")
+        if(str(form.password.data) != str(form.password_repeat.data)):
+            print(str(form.password.data), str(form.password_repeat.data))
+            return render_template('registration.html', title='Авторизация',
+                                   form=form,
+                                   message="Пароль не совпадают")
         user = User()
-        user.name = form.name.data
-        user.surname = form.surname.data
-        user.patronymic = form.patronymic.data
         user.login = form.login.data
         user.email = form.email.data
+        user.tg_name = form.tg_name.data
         user.password = form.password.data
-        user.level = 1
         db_sess.add(user)
         db_sess.commit()
 
         return redirect('/')
-    return render_template('register_new.html', title='Авторизация', form=form)
+    return render_template('registration.html', title='Регистрация', form=form)
     
-@app.route('/dashbord', methods=['GET'])
+@app.route('/dashboard', methods=['GET'])
 def dashboard():
-    return render_template("dashbord.html")
+    return render_template("dashboard.html")
 
 if __name__ == '__main__':
     app.debug = True

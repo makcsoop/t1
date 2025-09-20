@@ -37,46 +37,105 @@
     <section>
       <div class="loginContainer">
         <div class="loginForm">
-          <form action="/login" method="post">
+          <form action="" method="post">
+            {{ form.hidden_tag() }}  <!-- CSRF токен - ОБЯЗАТЕЛЬНО! -->
+            
             <h2>Регистрация</h2>
-
+        
             <div class="input-group">
-              <label for="username">Email:</label>
-              <i class="fa fa-envelope input-icon" aria-hidden="true"></i>
-              <input type="text" id="username" name="username" required />
+                <label for="email">Email:</label>
+                <i class="fa fa-envelope input-icon" aria-hidden="true"></i>
+                {{ form.email(
+                    id="email",
+                    class="form-styling",
+                    required=True
+                ) }}
+                {% if form.email.errors %}
+                    <div class="errors">
+                        {% for error in form.email.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        
+            <div class="input-group">
+                <label for="login">Login:</label>
+                <i class="fa fa-user-circle input-icon" aria-hidden="true"></i>
+                {{ form.login(
+                    id="login", 
+                    class="form-styling",
+                    required=True
+                ) }}
+                {% if form.login.errors %}
+                    <div class="errors">
+                        {% for error in form.login.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        
+            <div class="input-group">
+                <label for="telegram">Telegram:</label>
+                <i class="fa fa-user-circle input-icon" aria-hidden="true"></i>
+                {{ form.tg_name(
+                    id="tg_name",
+                    class="form-styling", 
+                    required=True
+                ) }}
+                {% if form.tg_name.errors %}
+                    <div class="errors">
+                        {% for error in form.tg_name.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <i class="fas fa-key input-icon"></i>
+                {{ form.password(
+                    id="password",
+                    class="form-styling",
+                    required=True
+                ) }}
+                {% if form.password.errors %}
+                    <div class="errors">
+                        {% for error in form.password.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
             </div>
 
             <div class="input-group">
-              <label for="telegram">Telegram:</label>
-              <i class="fa fa-user-circle input-icon" aria-hidden="true"></i>
-              <input type="telegram" id="telegram" name="telegram" required />
-            </div>
-
-            <div class="input-group">
-              <label for="password">Password:</label>
+              <label for="password">Repeat password:</label>
               <i class="fas fa-key input-icon"></i>
-              <input type="password" id="password" name="password" required />
+              {{ form.password_repeat(
+                  id="password_repeat",
+                  class="form-styling",
+                  required=True
+              ) }}
+              {% if form.password_repeat.errors %}
+                  <div class="errors">
+                      {% for error in form.password_repeat.errors %}
+                          <span>{{ error }}</span>
+                      {% endfor %}
+                  </div>
+              {% endif %}
             </div>
-
-            <button type="submit" class="buttonLog">Зарегестрироваться</button>
+            
+            <center><p>{{ form.submit(type="submit", class="buttonLog") }}</p></center>
+            <div style="color: red; margin-top: 20px; font-size: 20px;">{{ message }}</div>
 
             <div class="divider"></div>
-
+        
             <div class="links">
-              <p><a href="/forgot-password">Уже есть аккаунт?</a></p>
+                <p><a href="/authorization">Уже есть аккаунт?</a></p>
             </div>
-
-            <div class="divider"></div>
-
-            <div class="social-login">
-              <div class="social-btn vk">
-                <i class="fab fa-vk"></i>
-              </div>
-              <div class="social-btn google">
-                <i class="fab fa-google"></i>
-              </div>
-            </div>
-          </form>
+        </form>
         </div>
       </div>
     </section>

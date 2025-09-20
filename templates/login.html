@@ -37,27 +37,39 @@
     <div class="loginContainer">
       <div class="loginForm">
         <form action="" method="post">
+          {{ form.hidden_tag() }}
           <h2>Вход в систему</h2>
 
           <div class="input-group">
             <label for="username">Имя пользователя:</label>
             <i class="fas fa-user input-icon"></i>
-            <input type="text" id="username" name="username" required />
+            {{ form.login( class="form-styling", id="username", required=True )
+            }} {% if form.login.errors %}
+            <div class="errors">
+              {% for error in form.login.errors %}
+              <span>{{ error }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
           </div>
 
           <div class="input-group">
             <label for="password">Пароль:</label>
             <i class="fas fa-lock input-icon"></i>
-            <input type="password" id="password" name="password" required />
+            {{ form.password( class="form-styling", id="password", required=True
+            ) }}
           </div>
 
           <div class="checkbox-group">
-            <input type="checkbox" id="remember" name="remember" />
+            {{ form.remember(id="remember") }}
             <label for="remember">Запомнить меня</label>
           </div>
 
-          <button type="submit" class="buttonLog">Войти</button>
-
+          <p>{{ form.submit(type="submit", class="buttonLog") }}</p>
+          <!-- <button type="submit" class="buttonLog">Войти</button> -->
+          <div style="color: red; margin-top: 20px; font-size: 20px">
+            {{ message }}
+          </div>
           <div class="divider"></div>
 
           <div class="links">
