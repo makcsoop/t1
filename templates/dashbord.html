@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='assets/css/style.css') }}"
+    />
     <link
       rel="icon"
       href="./imagines/III-no-bg-preview-_carve.photos_.ico"
@@ -16,18 +19,108 @@
     />
     <title>PingTower</title>
   </head>
-  <header>
-    <div class="logo"><img src="./imagines/Frame 1.svg" alt="#" /></div>
+  <header class="DashboardHeader">
+    <div class="logo2">
+      <img src="static/assets/images/ping.svg" alt="#" style="width: 250px" />
+    </div>
     <div>
-      <button class="button-login" onclick="window.location.href='login.html'">
-        <span>В профиль</span>
-      </button>
+      <div class="group-left-header">
+        <span class="nameOfProfile">My profile</span>
+        <div style="width: 150px">
+          <button
+            class="button-login button-dashboard"
+            onclick="window.location.href='#'"
+            style="background-color: #1f2c39"
+          >
+            <img src="static/assets/images/user.svg" alt="user" width="50px" />
+          </button>
+        </div>
+
+        <div id="exitlogo">
+          <a href="#"
+            ><img
+              src="static/assets/images/image 1.svg"
+              alt="#"
+              style="width: 50px"
+          /></a>
+        </div>
+      </div>
     </div>
   </header>
-  <body></body>
-  <footer>
+  <body style="background-color: #0d1b2a">
+    <section class="dashboardContainer">
+      <div class="dashboardMenu">
+        <div style="text-align: center"><span id="dash1">Dashboard</span></div>
+        <div class="blockOfMenu">
+          <div class="imageDashboardMenu">
+            <img src="static/assets/images/favorite.png" alt="" width="30px" />
+          </div>
+          <div>
+            <span class="textMenu1">Избранное</span>
+          </div>
+        </div>
+        <div class="blockOfMenu">
+          <div class="imageDashboardMenu">
+            <img src="static/assets/images/favorite.png" alt="" width="30px" />
+          </div>
+          <div>
+            <a href="#" style="text-decoration: none"
+              ><span class="textMenu1">Проверить сайт</span></a
+            >
+          </div>
+        </div>
+        <div class="blockOfMenu">
+          <div class="imageDashboardMenu">
+            <img src="static/assets/images/favorite.png" alt="" width="30px" />
+          </div>
+          <div>
+            <span class="textMenu1">Избранное</span>
+          </div>
+        </div>
+        <div class="blockOfMenu">
+          <div class="imageDashboardMenu">
+            <img src="static/assets/images/favorite.png" alt="" width="30px" />
+          </div>
+          <div>
+            <span class="textMenu1">Избранное</span>
+          </div>
+        </div>
+        <div class="blockOfMenu">
+          <div class="imageDashboardMenu">
+            <img src="static/assets/images/favorite.png" alt="" width="30px" />
+          </div>
+          <div>
+            <span class="textMenu1">Избранное</span>
+          </div>
+        </div>
+        <div class="blockOfMenu">
+          <div class="imageDashboardMenu">
+            <img src="static/assets/images/favorite.png" alt="" width="30px" />
+          </div>
+          <div>
+            <span class="textMenu1">Избранное</span>
+          </div>
+        </div>
+      </div>
+      <section class="dashboardNaming">
+        <!-- <h1 style="text-align: center; width: 100%; margin-bottom: 30px">
+          Dashboard
+        </h1> -->
+        <h2 style="text-align: left; width: 100%">Избранные</h2>
+        <section class="sectionBlockGraph">
+          <div class="blockGraph"></div>
+          <div class="blockGraph"></div>
+          <div class="blockGraph"></div>
+          <div class="blockGraph"></div>
+          <div class="blockGraph"></div>
+          <div class="blockGraph"></div>
+        </section>
+      </section>
+    </section>
+  </body>
+  <footer style="background-color: #1f2c39; margin-top: 150px">
     <div class="a1partfooter">
-      <img src="./imagines/ping.svg" alt="#" />
+      <img src="static/assets/images/ping.svg" alt="#" />
     </div>
     <div class="secondpartFooter">
       <div id="textDiv">

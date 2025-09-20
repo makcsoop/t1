@@ -107,9 +107,8 @@ def register_form():
     return render_template('register_new.html', title='Авторизация', form=form)
     
 @app.route('/dashbord', methods=['GET'])
-def main():
+def dashboard():
     return render_template("dashbord.html")
-    
 
 if __name__ == '__main__':
     app.debug = True
