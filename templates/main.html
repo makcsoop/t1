@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='assets/css/style.css') }}"
+    />
     <link
       rel="icon"
       href="{{ url_for('static', filename='assets/images/III-no-bg-preview-_carve.photos_.i co') }}"
@@ -19,9 +22,14 @@
 
   <header>
     {% set img_path = 'assets/images/' %}
-    <div class="logo"><img src="/static/assets/images/Frame 1.svg" alt="#" /></div>
+    <div class="logo">
+      <img src="/static/assets/images/Frame 1.svg" alt="#" />
+    </div>
     <div>
-      <button class="button-login" onclick="window.location.href='/authorization'">
+      <button
+        class="button-login"
+        onclick="window.location.href='/authorization'"
+      >
         <i class="fas fa-sign-in-alt"></i>
         <span class="button-text">Вход</span>
       </button>
@@ -38,7 +46,11 @@
       <section>
         <div class="Block">
           <div class="informBox">
-            <img src="/static/assets/images/11781193.svg" alt="Server" class="informImg" />
+            <img
+              src="/static/assets/images/server.svg"
+              alt="Server"
+              class="informImg"
+            />
             <div class="opisanie">
               <a href="#" class="nonLink">Сервисы</a>
               <span class="aboutText">
@@ -49,8 +61,11 @@
             </div>
           </div>
           <div class="informBox">
-            
-            <img src="/static/assets/images/6472295.svg" alt="SSL" class="informImg" />
+            <img
+              src="/static/assets/images/ssl.svg"
+              alt="SSL"
+              class="informImg"
+            />
             <div class="opisanie">
               <a href="#" class="nonLink">SSL</a>
               <span class="aboutText">
@@ -61,7 +76,11 @@
             </div>
           </div>
           <div class="informBox">
-            <img src="/static/assets/images/2145933.svg" alt="Server" class="informImg" />
+            <img
+              src="/static/assets/images/INP.svg"
+              alt="INP"
+              class="informImg"
+            />
             <div class="opisanie">
               <a href="#" class="nonLink">INP</a>
               <span class="aboutText">
@@ -72,8 +91,11 @@
             </div>
           </div>
           <div class="informBox">
-            
-            <img src="/static/assets/images/10225073.svg" alt="Server" class="informImg" />
+            <img
+              src="/static/assets/images/CLS.svg"
+              alt="CLS"
+              class="informImg"
+            />
             <div class="opisanie">
               <a href="#" class="nonLink">CLS</a>
               <span class="aboutText">
@@ -85,7 +107,11 @@
             </div>
           </div>
           <div class="informBox">
-            <img src="/static/assets/images/9160827.svg" alt="Server" class="informImg" />
+            <img
+              src="/static/assets/images/TBT.svg"
+              alt="TBT"
+              class="informImg"
+            />
             <div class="opisanie">
               <a href="#" class="nonLink">TBT</a>
               <span class="aboutText">
@@ -96,7 +122,11 @@
             </div>
           </div>
           <div class="informBox">
-            <img src="/static/assets/images/5394955.svg" alt="Server" class="informImg" />
+            <img
+              src="/static/assets/images/SI.svg"
+              alt="SI"
+              class="informImg"
+            />
             <div class="opisanie">
               <a href="#" class="nonLink">SI</a>
               <span class="aboutText">
