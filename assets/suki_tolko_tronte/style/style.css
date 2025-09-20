@@ -1,0 +1,356 @@
+@font-face {
+  font-family: "Dela";
+  src: url(DelaGothicOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url(Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  margin: 0px;
+  width: 100%;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.logo {
+  margin-left: 7em;
+  margin-top: 1em;
+}
+
+.button-login {
+  margin-top: 1em;
+  margin-right: 7em;
+  background-color: #ccff33;
+  width: 152px;
+  height: 53px;
+  font-family: Dela;
+  padding-bottom: 9px;
+  border: none;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 30px;
+  transition: transform 0.3s ease;
+  text-align: center;
+  color: #0d1b2a;
+}
+
+.button-login:hover {
+  transform: scale(1.1);
+}
+
+body {
+  background-color: white;
+}
+
+.helloWord {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.Block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 25px;
+  /* border: 10px solid #ccff33; */
+}
+
+.informBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 calc(100% / 3);
+  margin-bottom: 80px;
+}
+
+.aboutText {
+  font-family: Mont;
+  font-size: 14px;
+  width: 300px;
+  align-content: center;
+  text-align: center;
+}
+
+.opisanie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nonLink {
+  text-decoration: none;
+  font-family: Dela;
+  font-size: 25px;
+  color: #0d1b2a;
+  margin-bottom: 25px;
+}
+
+.informImg {
+  width: 130px;
+  height: 130px;
+  margin-bottom: 25px;
+}
+
+.try4freeDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.try4free {
+  background-color: #ccff33;
+  border: none;
+  border-radius: 15px;
+  font-family: Dela;
+  font-size: 22px;
+  width: 360px;
+  height: 50px;
+  transition: transform 0.3s ease;
+  margin-bottom: 200px;
+}
+
+.try4free:hover {
+  transform: scale(1.1);
+}
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+
+.loginForm {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #2c3e50;
+  transition: all 0.3s ease;
+}
+
+.loginForm:hover {
+  border-color: #3b5998;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+  color: #0d1b2a;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 30px;
+  font-family: Dela;
+  position: relative;
+  padding-bottom: 10px;
+}
+/* 
+h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #3498db, #e74c3c);
+  border-radius: 3px;
+} */
+
+.input-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: Dela;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="telegram"] {
+  width: 100%;
+  padding: 14px 15px 14px 45px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="telegram"] {
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 47px;
+  color: #7f8c8d;
+  font-size: 18px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  accent-color: #3498db;
+}
+
+.buttonLog {
+  background-color: #ccff33;
+  border: none;
+  border-radius: 15px;
+  font-family: Dela;
+  font-size: 22px;
+  width: 300px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.buttonLog:hover {
+  transform: scale(1.1);
+}
+
+.links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.links a {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  padding: 0 0.25rem;
+  margin: 0 -0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.links a:hover {
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 #54b3d6;
+}
+.links a {
+  color: #54b3d6;
+  font-family: "Mont";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #e0e0e0, transparent);
+  margin: 20px 0;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.vk {
+  background: #4a76a8; /* Цвет VK */
+}
+
+.google {
+  background: #dd4b39;
+}
+
+.social-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 480px) {
+  .loginForm {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+.loginContainer {
+  margin-bottom: 200px;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d1b2a;
+}
+
+.a1partfooter {
+  width: 300px;
+  margin-left: 50px;
+}
+
+.secondpartFooter {
+  justify-content: right;
+}
+
+#text {
+  font-family: Dela;
+  font-size: 25px;
+  color: #fff;
+}
+
+#textDiv {
+  margin-bottom: 20px;
+  margin-right: 50px;
+  text-align: right;
+}
+
+.secondpartFooter a {
+  text-decoration: none;
+  font-family: Mont;
+  color: #7f8c8d;
+  margin-right: 50px;
+}
