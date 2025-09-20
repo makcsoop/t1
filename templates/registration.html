@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='assets/css/style.css') }}"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -23,7 +26,10 @@
   <header class="newHeader" style="justify-content: center; height: 99.31px">
     <div class="logoN">
       <a href="/main.html"
-        ><img src="./imagines/Frame 1.svg" alt="#" style="margin-top: 100px"
+        ><img
+          src="static/assets/images/Frame 1.svg"
+          alt="#"
+          style="margin-top: 100px"
       /></a>
     </div>
   </header>
@@ -76,7 +82,7 @@
     </section>
     <footer>
       <div class="a1partfooter">
-        <img src="./imagines/ping.svg" alt="#" />
+        <img src="static/assets/images/ping.svg" alt="#" />
       </div>
       <div class="secondpartFooter">
         <div id="textDiv">
