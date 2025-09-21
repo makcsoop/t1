@@ -446,6 +446,13 @@ th {
   font-size: 18px;
 }
 
+#id {
+  background-color: white;
+  color: #0d1b2a;
+  width: 70%;
+  border-radius: 10px;
+}
+
 .sectionBlockGraph {
   display: flex;
   flex-direction: row;
