@@ -21,14 +21,15 @@
   </head>
   <header class="DashboardHeader">
     <div class="logo2">
-      <a href="/"><img src="static/assets/images/ping.svg" alt="#" style="width: 250px" /></a>
+      <a href="/"
+        ><img src="static/assets/images/ping.svg" alt="#" style="width: 250px"
+      /></a>
     </div>
     <div>
       <div class="group-left-header">
         <span class="nameOfProfile">{{ session.login }}</span>
-        
+
         <div style="width: 150px">
-         
           <button
             type="submit"
             class="button-login button-dashboard"
@@ -39,12 +40,18 @@
         </div>
         <form method="POST" action="{{ url_for('logout') }}">
           <div id="exitlogo">
-              <button type="submit" style="border: none; background: none; cursor: pointer;">
-                  <img src="static/assets/images/image 1.svg" alt="Выйти" style="width: 50px">
-              </button>
+            <button
+              type="submit"
+              style="border: none; background: none; cursor: pointer"
+            >
+              <img
+                src="static/assets/images/image 1.svg"
+                alt="Выйти"
+                style="width: 50px"
+              />
+            </button>
           </div>
-      </form>
-      
+        </form>
       </div>
     </div>
   </header>

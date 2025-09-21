@@ -210,6 +210,7 @@ db_sess = db_session.create_session()
 def main():
     return render_template("main.html")
 
+
 @app.route('/authorization', methods=["GET", "POST"])
 def login_form():
     if in_user(session.get("login")):
@@ -276,9 +277,9 @@ def logout():
     return redirect('/authorization')
 
 
-@app.route('/checking', methods=['POST'])
+@app.route('/checking')
 def checking():
-    return render_template("/checkSiteDashboard.html")
+    return render_template("checkSiteDashboard.html")
 
 
 def format_results(results: Dict[str, Any]) -> str:
@@ -311,9 +312,8 @@ def format_results(results: Dict[str, Any]) -> str:
     
 if __name__ == '__main__':
     app.debug = True
-   #app.run(port=8000, host='127.0.0.1')
+    app.run(port=8000, host='127.0.0.1')
     checker = ResourceAvailabilityChecker(timeout=15)
-
 # Проверка одного ресурса
     result = checker.check_resource("https://github.com/")
     print(format_results(result))
