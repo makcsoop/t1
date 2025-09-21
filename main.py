@@ -279,7 +279,7 @@ def logout():
 
 @app.route('/checking', methods=['POST'])
 def checking():
-    return render_template("/checkSiteDashboard.html")
+    return render_template("checkSiteDashboard.html")
 
 
 def format_results(results: Dict[str, Any]) -> str:
@@ -312,7 +312,7 @@ def format_results(results: Dict[str, Any]) -> str:
     
 if __name__ == '__main__':
     app.debug = True
-    app.run(port=8000, host='127.0.0.1')
+    app.run(port=8001, host='127.0.0.1')
     #checker = ResourceAvailabilityChecker(timeout=15)
 
 # Проверка одного ресурса
