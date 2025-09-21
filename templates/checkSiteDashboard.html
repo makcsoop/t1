@@ -64,7 +64,9 @@
             <img src="static/assets/images/home.png" alt="" width="30px" />
           </div>
           <div>
-            <a href="/dashboard"><span class="textMenu1">Главная</span></a>
+            <a href="/dashboard" style="text-decoration: none"
+              ><span class="textMenu1">Главная</span></a
+            >
           </div>
         </div>
         <div class="blockOfMenu">
@@ -81,7 +83,9 @@
           </div>
           <div>
             <a href="/checking" style="text-decoration: none"
-              ><span class="textMenu1">Проверить сайт</span></a
+              ><span class="textMenu1" style="display: flex; flex-wrap: wrap"
+                >Проверить сайт</span
+              ></a
             >
           </div>
         </div>
@@ -98,7 +102,7 @@
         <!-- <h1 style="text-align: center; width: 100%; margin-bottom: 30px">
           Dashboard
         </h1> -->
-        <h2 style="text-align: left; width: 100%">Главная</h2>
+        <h2 style="text-align: left; width: 100%">Проверка сайта</h2>
         <div class="infoTime">
           <p>
             <span style="color: gray">Последняя проверка</span>
@@ -110,10 +114,39 @@
           </p>
         </div>
         <section class="sectionBlockGraph">
-          <div class="blockGraph">
-            <input type="url" name="url" id="url" placeholder="Url" />
+          <div class="blockUrl">
+            <span
+              style="
+                font-family: Mont;
+                color: white;
+                font-size: 20px;
+                font-weight: 500;
+                position: relative;
+                left: 20px;
+              "
+              >Введите ссылку</span
+            >
+            <input
+              type="url"
+              name="url"
+              id="url"
+              placeholder="HUESOS.COM"
+              style="
+                font-family: Mont;
+                padding-left: 10px;
+                font-size: 18px;
+                font-weight: 500;
+              "
+            />
           </div>
         </section>
+        <button
+          type="submit"
+          class="buttonLog"
+          style="position: relative; bottom: 30px; right: -450px; width: 200px"
+        >
+          Отправить
+        </button>
       </section>
     </section>
   </body>
