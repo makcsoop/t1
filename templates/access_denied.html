@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доступ запрещен - 403 Forbidden</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+        
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+        
+        .error-code {
+            font-size: 80px;
+            font-weight: bold;
+            color: #ff4757;
+            margin-bottom: 20px;
+        }
+        
+        .error-title {
+            font-size: 28px;
+            color: #2d3436;
+            margin-bottom: 15px;
+        }
+        
+        .error-message {
+            font-size: 16px;
+            color: #636e72;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .user-info {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .user-info p {
+            margin: 5px 0;
+            color: #495057;
+        }
+        
+        .buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: #e9ecef;
+            color: #495057;
+        }
+        
+        .btn-secondary:hover {
+            background: #dee2e6;
+            transform: translateY(-2px);
+        }
+        
+        .btn-logout {
+            background: #ff4757;
+            color: white;
+        }
+        
+        .btn-logout:hover {
+            background: #ff3838;
+            transform: translateY(-2px);
+        }
+        
+        .icon {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            .error-code {
+                font-size: 60px;
+            }
+            
+            .buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🚫</div>
+        <div class="error-code">403</div>
+        <h1 class="error-title">Доступ запрещен</h1>
+        
+        <p class="error-message">
+            У вас недостаточно прав для просмотра этой страницы. 
+            Пожалуйста, обратитесь к администратору системы для получения доступа.
+        </p>
+        
+        <div class="user-info">
+            <p><strong>Текущий пользователь:</strong>{{ session.login }}</p>
+            <p><strong>Роль:</strong> Пользователь</p>
+            <p><strong>Время:</strong> <span id="current-time"></span></p>
+        </div>
+        
+        <div class="buttons">
+            <a href="/" class="btn btn-primary">На главную</a>
+            <a href="/support" class="btn btn-secondary">Техподдержка</a>
+            <a href="/authorization" class="btn btn-logout">Выйти</a>
+        </div>
+    </div>
+
+    <script>
+        // Обновление текущего времени
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleString('ru-RU', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+            document.getElementById('current-time').textContent = timeString;
+        }
+        
+        // Обновляем время при загрузке и каждую секунду
+        updateTime();
+        setInterval(updateTime, 1000);
+        
+        // Можно добавить получение реальных данных пользователя из localStorage/sessionStorage
+        document.addEventListener('DOMContentLoaded', function() {
+            const userEmail = localStorage.getItem('userEmail') || 'user@example.com';
+            const userRole = localStorage.getItem('userRole') || 'Пользователь';
+            
+            document.querySelector('.user-info p:nth-child(1)').innerHTML = 
+                `<strong>Текущий пользователь:</strong> ${userEmail}`;
+            document.querySelector('.user-info p:nth-child(2)').innerHTML = 
+                `<strong>Роль:</strong> ${userRole}`;
+        });
+    </script>
+</body>
+</html>

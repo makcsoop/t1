@@ -1,4 +1,4 @@
-from flask import Flask, request, session, render_template, redirect
+from flask import Flask, request, session, render_template, redirect, url_for
 from scripts import *
 import sqlalchemy
 import requests
@@ -54,8 +54,9 @@ def main():
 
 @app.route('/authorization', methods=["GET", "POST"])
 def login_form():
+    if in_user(session.get("login")):
+        return redirect(url_for('dashboard'))
     session['login'] = ''
-    session['role'] = 0
     form = LoginForm()
     if form.validate_on_submit():
         login_cur = db_sess.query(User).filter(User.login == str(form.login.data)).first()
@@ -70,7 +71,7 @@ def login_form():
         login = form.login.data
         session['login'] = login
 
-        return redirect('/')
+        return redirect('/dashboard')
     return render_template('login.html', title='Авторизация', form=form)
 
 
@@ -104,10 +105,18 @@ def register_form():
         return redirect('/')
     return render_template('registration.html', title='Регистрация', form=form)
     
-@app.route('/dashboard', methods=['GET'])
+
+@app.route('/dashboard')
 def dashboard():
+    if not in_user(session.get("login")):
+        return render_template("access_denied.html")
     return render_template("dashboard.html")
 
+@app.route('/logout', methods=['POST'])
+def logout():
+    session.clear()
+    return redirect('/authorization')
+    
 if __name__ == '__main__':
     app.debug = True
     app.run(port=8000, host='127.0.0.1')

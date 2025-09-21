@@ -18,6 +18,14 @@ def check_user(login, password):
         return user[0][0]
     return 0
 
+def in_user(login):
+    base, cursor = connect_base()
+    user = cursor.execute(
+        f"""SELECT * FROM users WHERE login = '{login}'""").fetchall()
+    base.close()
+    if len(user) != 0:
+        return True
+    return False
 
 def isvalid_login(login):
     base = sqlite3.connect('db/base.db')
