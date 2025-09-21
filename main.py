@@ -52,6 +52,7 @@ db_sess = db_session.create_session()
 def main():
     return render_template("main.html")
 
+
 @app.route('/authorization', methods=["GET", "POST"])
 def login_form():
     if in_user(session.get("login")):
